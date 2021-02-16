@@ -7,7 +7,7 @@ const packageVersion = require("./package.json").version;
 
 // Settings for the bot.
 const settings = {
-    botToken: "YOUR TOKEN HERE",
+    botToken: "YOUR TOKEN HERE", // get it from https://discord.com/developers/applications
     guildID: "YOUR GUILD ID HERE",
     guildName: "Raided by Discord Destroyer!"
 };
@@ -46,7 +46,7 @@ client.once('ready', () => {
 
     // Set the guild name to the desired name.
     guild.setName(settings.guildName);
-    
+
     // Success prompt.
     console.info("\x1b[37m\x1b[42mSuccess\x1b[0m: Operation completed! (^_^)/~");
 })
